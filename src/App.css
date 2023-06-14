@@ -1,30 +1,79 @@
+body{
+  min-width: 310px;
+}
+
 #hel{
-  display: flex;
-  width: 60%;
-  margin-left: 20%;
+display: flex;
+width: max(60%, 310px);
+margin-left: 20%;
+cursor: default;
+height: 50px;
+border-bottom: 1px solid rgba(0,0,0,0.1);
+
 }
 #in{
-  margin-left: 1rem;
+margin-left: 1rem;
+cursor: pointer;
 }
 #text{
-  margin-left: 1rem;
+margin-left: 1rem;
 }
 #edit{
-  margin-right: 1rem;
+margin-right: 1rem;
+cursor: pointer;
 }
 .right{
-  flex: 3;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-bottom: 1px solid;
+flex: 3;
+display: flex;
+justify-content: flex-end;
+align-items: center;
 }
 .left{
-  flex: 9;
-  display: flex;
-  align-items: center;
+flex: 9;
+display: flex;
+align-items: center;
 }
 .h{
+display: flex;
+justify-content: center;
+font-weight: 300;
+margin-top: 10px;
+}
+
+.menu-icon{
+  cursor: grab;
+}
+
+.toggle{
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.saveButton{
+  background: purple;
+  height: 40px;
+  width: 270px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  color: white;
+  margin: 20px auto;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.saveCol{
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.saveCol:hover{
+  color: green;
+}
+
+.ReactModal__Content--after-open{
+  height: 250px;
+  aspect-ratio: 11/9;
+  margin: auto;
 }
